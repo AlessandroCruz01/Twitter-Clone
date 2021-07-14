@@ -27,7 +27,7 @@ const SlideBar: React.FC = () => {
                         title="Talvez voce curta"
                         elements={[
                             <FollowSuggestion
-                                name="Renato Oliveira" 
+                                name="Renato de Oliveira" 
                                 nickname="@renatohere" />,
                             <FollowSuggestion
                                 name="Joao Loiola" 
@@ -35,7 +35,15 @@ const SlideBar: React.FC = () => {
 
                             <FollowSuggestion
                                 name="Alif Hagnarok" 
-                                nickname="@alif" />
+                                nickname="@alif" />,
+
+                            <FollowSuggestion
+                                name="Lucas Markes" 
+                                nickname="@lk" />,
+
+                            <FollowSuggestion
+                                name="Doriandson Marinho" 
+                                nickname="@Marinho_Dori" />
                         ]}
                     />
 
