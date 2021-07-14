@@ -1,4 +1,5 @@
 import React from 'react';
+import StickBox from 'react-sticky-box'
 
 import {
     Container,
@@ -8,6 +9,10 @@ import {
     Body,
 } from './styles';
 
+import List from '../List/List';
+import FollowSuggestion from '../FollowSuggestion';
+import News from '../News';
+
 const SlideBar: React.FC = () => {
     return (
         <Container>
@@ -16,12 +21,43 @@ const SlideBar: React.FC = () => {
                 <SearchIcon />
             </SearchWrapper>
 
-            <Body>
+            <StickBox>
+                <Body>
+                    <List 
+                        title="Talvez voce curta"
+                        elements={[
+                            <FollowSuggestion
+                                name="Renato Oliveira" 
+                                nickname="@renatohere" />,
+                            <FollowSuggestion
+                                name="Joao Loiola" 
+                                nickname="@jloiola6" />,
 
-                <p>{'Lorem ipsum dolar sit amet. '.repeat(40)}</p>
+                            <FollowSuggestion
+                                name="Alif Hagnarok" 
+                                nickname="@alif" />
+                        ]}
+                    />
 
-            </Body>
-
+                    <List 
+                        title="Talvez voce curta"
+                        elements={[
+                            <News />,
+                            <News />,
+                            <News />,
+                            <News />,
+                            <News />,
+                            <News />,
+                            <News />,
+                            <News />,
+                            <News />,
+                            <News />,
+                            <News />,
+                            <News />,
+                        ]}
+                    />
+                </Body>
+            </StickBox>
         </Container>
     );
 }
