@@ -43,7 +43,11 @@ const SlideBar: React.FC = () => {
 
                             <FollowSuggestion
                                 name="Doriandson Marinho" 
-                                nickname="@Marinho_Dori" />
+                                nickname="@Marinho_Dori" />,
+
+                            <FollowSuggestion
+                                name="Elivelton Lima" 
+                                nickname="@veltinho" />
                         ]}
                     />
 
